@@ -1,12 +1,13 @@
 {
     "version": "2.0",
-    "columns": 4,
+    "columns": 3,
     "tiles": [
         {
             "type": "GITHUB-COUNT",
-            "label": "terraform-provider-cloudavenue open issues",
+            "rowSpan": 2,
+            "label": "Open Issues",
             "params": {
-                "query": "is:issue is:open repo:orange-cloudavenue/terraform-provider-cloudavenue"
+                "query": "is:open is:issue org:FrangipaneTeam org:orange-cloudavenue"
             }
         },
         {
@@ -14,16 +15,6 @@
             "params": {
                 "owner": "orange-cloudavenue",
                 "repository": "terraform-provider-cloudavenue"
-            }
-        },
-        {
-            "type": "EMPTY"
-        },
-        {
-            "type": "GITHUB-COUNT",
-            "label": "provider-flexibleengine open issues",
-            "params": {
-                "query": "is:issue is:open repo:FrangipaneTeam/provider-flexibleengine"
             }
         },
         {
