@@ -1,0 +1,45 @@
+{
+    "version": "2.0",
+    "columns": 4,
+    "tiles": [
+        {
+            "type": "GITHUB-COUNT",
+            "label": "terraform-provider-cloudavenue open issues",
+            "params": {
+                "query": "is:issue is:open repo:orange-cloudavenue/terraform-provider-cloudavenue"
+            }
+        },
+        {
+            "type": "GENERATE:GITHUB-PULLREQUEST",
+            "params": {
+                "owner": "orange-cloudavenue",
+                "repository": "terraform-provider-cloudavenue"
+            }
+        },
+        {
+            "type": "EMPTY"
+        },
+        {
+            "type": "GITHUB-COUNT",
+            "label": "provider-flexibleengine open issues",
+            "params": {
+                "query": "is:issue is:open repo:FrangipaneTeam/provider-flexibleengine"
+            }
+        },
+        {
+            "type": "GITHUB-CHECKS",
+            "params": {
+                "owner": "FrangipaneTeam",
+                "repository": "provider-flexibleengine",
+                "ref": "main"
+            }
+        },
+        {
+            "type": "GENERATE:GITHUB-PULLREQUEST",
+            "params": {
+                "owner": "FrangipaneTeam",
+                "repository": "provider-flexibleengine"
+            }
+        }
+    ]
+}
